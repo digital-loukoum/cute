@@ -1,0 +1,29 @@
+{
+  "name": "@digitak/cute",
+  "version": "1.0.0",
+  "description": "A tool library to stringify and output values to the console",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./*": "./*.js"
+  },
+  "scripts": {
+    "test": "esrun --watch test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-loukoum/cute.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digital-loukoum/cute/issues"
+  },
+  "homepage": "https://github.com/digital-loukoum/cute#readme",
+  "devDependencies": {
+    "@digitak/esrun": "^3.1.2",
+    "fartest": "^2.1.8",
+    "typescript": "^4.7.0-dev.20220408"
+  }
+}

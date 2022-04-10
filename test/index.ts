@@ -8,6 +8,11 @@ type Sample = {
 }
 
 start("Stringify", async ({ stage, same }) => {
+	const circularReference = {
+		self: <any>null,
+	}
+	circularReference.self = circularReference
+
 	const samples: Array<Sample> = [
 		{
 			name: "Number",
@@ -81,6 +86,11 @@ start("Stringify", async ({ stage, same }) => {
 				[3, 4],
 			]),
 			expected: "Map { 1 => 2, 3 => 4 }",
+		},
+		{
+			name: "Circular reference",
+			value: circularReference,
+			expected: "{ self: [Circular * 1] }",
 		},
 		{
 			name: "Big nested object",

@@ -2,6 +2,7 @@
   "name": "@digitak/cute",
   "version": "1.0.0",
   "description": "A tool library to stringify and output values to the console",
+  "type": "module",
   "main": "./index.js",
   "exports": {
     ".": "./index.js",

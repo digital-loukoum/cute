@@ -1,6 +1,6 @@
 {
 	"name": "@digitak/cute",
-	"version": "1.0.1",
+	"version": "1.0.2",
   "type": "module",
 	"description": "A tool library to stringify and output values to the console",
 	"main": "./index.js",
